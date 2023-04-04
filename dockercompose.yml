@@ -1,0 +1,21 @@
+---
+version: "3"
+services:
+  java:
+    image: maruthidhuli1712/nitjava:latest
+    ports:
+      - 8000:80
+    deploy:
+      replicas: 3
+  devops:
+    image: maruthidhuli1712/nitdevops:latest
+    ports:
+      - 8001:80
+    deploy:
+      replicas: 3
+  datascience:
+    image: maruthidhuli1712/nitdatascience:latest
+    ports:
+      - 8002:80
+    deploy:
+      replicas: 3
